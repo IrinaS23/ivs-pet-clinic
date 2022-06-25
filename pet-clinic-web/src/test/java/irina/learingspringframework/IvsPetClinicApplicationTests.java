@@ -1,4 +1,4 @@
-package irina.learingspringframework.ivspetclinic;
+package irina.learingspringframework;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
