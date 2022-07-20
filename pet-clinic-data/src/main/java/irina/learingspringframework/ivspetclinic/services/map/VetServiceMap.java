@@ -3,9 +3,9 @@ package irina.learingspringframework.ivspetclinic.services.map;
 import java.util.Set;
 
 import irina.learingspringframework.ivspetclinic.model.Vet;
-import irina.learingspringframework.ivspetclinic.services.CrudServices;
+import irina.learingspringframework.ivspetclinic.services.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long>  implements CrudServices<Vet, Long>{
+public class VetServiceMap extends AbstractMapService<Vet, Long>  implements VetService{
 
 	@Override
 	public Vet save(Vet object) {

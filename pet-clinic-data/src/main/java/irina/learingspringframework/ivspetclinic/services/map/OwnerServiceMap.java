@@ -3,9 +3,9 @@ package irina.learingspringframework.ivspetclinic.services.map;
 import java.util.Set;
 
 import irina.learingspringframework.ivspetclinic.model.Owner;
-import irina.learingspringframework.ivspetclinic.services.CrudServices;
+import irina.learingspringframework.ivspetclinic.services.OwnerService;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements CrudServices<Owner, Long>{
+public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements OwnerService{
 
 	@Override
 	public Owner save(Owner object) {
@@ -35,6 +35,12 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements
 	@Override
 	public void delete(Owner object) {
 		super.delete(object);
+	}
+
+	@Override
+	public Owner findByLastName(String lastName) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
