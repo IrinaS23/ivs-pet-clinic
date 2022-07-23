@@ -11,10 +11,6 @@ import irina.learingspringframework.ivspetclinic.services.VetService;
 @Service
 public class VetServiceMap extends AbstractMapService<Vet, Long>  implements VetService{
 
-	@Override
-	public Vet save(Vet object) {
-		return super.save(object.getId(), object);
-	}
 
 	@Override
 	public Set<Vet> findAll() {
@@ -27,8 +23,8 @@ public class VetServiceMap extends AbstractMapService<Vet, Long>  implements Vet
 	}
 
 	@Override
-	public Vet save(Long id, Vet object) {
-		return super.save(id, object);
+	public Vet save(Vet object) {
+		return super.save(object);
 	}
 
 	@Override
