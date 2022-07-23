@@ -2,9 +2,13 @@ package irina.learingspringframework.ivspetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import irina.learingspringframework.ivspetclinic.model.Owner;
 import irina.learingspringframework.ivspetclinic.services.OwnerService;
 
+
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements OwnerService{
 
 	@Override
